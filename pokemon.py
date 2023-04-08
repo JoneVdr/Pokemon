@@ -33,6 +33,13 @@ this Python class.
 
 # Source packages.
 
+from enum import Enum
+
+class Pokemon(Enum):
+    punch = 1
+    kick = 2
+    poke = 3
+    headbutt = 4
 
 
 class Pokemon():
@@ -68,7 +75,38 @@ class Pokemon():
       >>> from weapon_type import WeaponType
       >>> obj_Pokemon = Pokemon(1, "Bulbasaur", WeaponType.PUNCH, 100, 7, 10)
     """
+    def __init__(self, id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating):
+        self.id = id
+        self.pokemon_name = pokemon_name
+        self.weapon_type = weapon_type
+        self.health_points = health_points
+        self.attack_rating = attack_rating
+        self.defense_rating = defense_rating
 
+    def get_pokemon_name(self):
+        return self.pokemon_name
+    def get_weapon_type(self):
+        return self.weapon_type
+    def get_health_points(self):
+        return self.health_points
+    def get_attack_rating(self):
+        return self.attack_rating
+    def get_defense_rating(self):
+        return self.defense_rating
+
+    def set_pokemon_name(self, pokemon_name):
+        self.pokemon_name = pokemon_name
+    def set_weapon_type(self, weapon_type):
+        self.weapon_type = weapon_type
+    def set_health_points(self, health_points):
+        self.health_points = health_points
+    def set_attack_rating(self, attack_rating):
+        self.attack_rating = attack_rating
+    def set_defense_rating(self, defense_rating):
+        self.defense_rating = defense_rating
+
+    def __str__(self):
+        return "Pokemon ID " + str(self.id) + " with name " + str(self.pokemon_name) + " has as weapon " + str(self.weapon_type) + " and health " + str(self.health_points)
 
 
 
