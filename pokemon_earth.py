@@ -68,6 +68,16 @@ class PokemonEarth():
       >>> from weapon_type import WeaponType
       >>> obj_Pokemon = PokemonEarth(1, "Diglett", WeaponType.PUNCH, 100, 7, 10)
     """
+    def __init__(self, id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating):
+
+            self.id = id
+            self.pokemon_name = pokemon_name
+            self.weapon_type = weapon_type
+            self.health_points = health_points
+            self.attack_rating = attack_rating
+            self.defense_rating = defense_rating
+
+    defense_rating = 11 < defense_rating < 20
 
 
 def main():

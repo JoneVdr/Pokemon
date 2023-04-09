@@ -69,7 +69,7 @@ class PokemonAir():
       >>> from weapon_type import WeaponType
       >>> obj_Pokemon = PokemonEarth(1, "Pidgey", WeaponType.PUNCH, 100, 7, 10)
     """
-    
+
 
 
 def main():
