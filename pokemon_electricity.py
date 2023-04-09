@@ -33,7 +33,8 @@ this Python class.
 
 # Source packages.
 
-
+from pokemon import Pokemon
+from random import random
 
 class PokemonElectricity():
     """Python class to implement a basic version of a Pokemon of the game.
@@ -68,6 +69,16 @@ class PokemonElectricity():
       >>> from weapon_type import WeaponType
       >>> obj_Pokemon = PokemonEarth(1, "Pikachu", WeaponType.PUNCH, 100, 7, 10)
     """
+    def __init__(self, id, pokemon_name, weapon_type, health_points,attack_rating, defense_rating):
+
+        self.id = id
+        self.pokemon_name = pokemon_name
+        self.weapon_type = weapon_type
+        self.health_points = health_points
+        self.attack_rating = attack_rating
+        self.defense_rating = defense_rating
+
+        s
 
 
 
