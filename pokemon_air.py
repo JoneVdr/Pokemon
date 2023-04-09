@@ -34,7 +34,7 @@ this Python class.
 # Source packages.
 
 from Pokemon import Pokemon
-
+from random import random
 
 class PokemonAir():
     """Python class to implement a basic version of a Pokemon of the game.
